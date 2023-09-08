@@ -7,8 +7,8 @@ function sortBandNamesWithoutArticles(names) {
 
   // Custom sorting function
   function customSort(a, b) {
-    const nameA = a.toLowerCase();
-    const nameB = b.toLowerCase();
+    let nameA = a.toLowerCase();
+    let nameB = b.toLowerCase();
 
     // Remove articles from the beginning of each name
     for (const article of articles) {
@@ -45,5 +45,12 @@ for (const name of sortedBandNames) {
   li.textContent = name;
   ul.appendChild(li);
 }
+
+
+    
+
+  
+
+
 
 
